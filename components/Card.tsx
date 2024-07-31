@@ -7,9 +7,9 @@ const Card = () => {
     <div className='py-20 bg-lime-950' id='exp' >
         
       <h1 className="heading text-center text-3xl">
-        Wisata&nbsp;
+        WISATA&nbsp;
         <span className="text-cyan-500">
-          papua
+          PAPUA
         </span>
       </h1>
     
@@ -27,7 +27,7 @@ const Card = () => {
                     <div className='flex lg:flex-row flex-col lg:items-center p-3 py-6 
                     md:p-5 lg:p-10 gap-2'>
                         <img src={card.img} 
-                        alt={card.thumbnail} 
+                        alt={card.img} 
                         className='lg:w-322 md:w-20
                         w-16'/>
                         <div className='lg:ms-5'>
