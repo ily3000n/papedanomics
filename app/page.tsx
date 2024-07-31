@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import Card2 from "@/components/Card2";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Slider from "@/components/Slider";
@@ -11,7 +12,8 @@ export default function Home() {
     <Header />
    
     <Slider />
-    <Card />
+    <Card2 />
+    
     <Footer />
 
     </div>
