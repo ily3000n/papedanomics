@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+
 import Card2 from "@/components/Card2";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
