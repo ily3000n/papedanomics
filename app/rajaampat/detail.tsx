@@ -55,8 +55,8 @@ const Detail: React.FC = () => {
           </Carousel>
         </div>
         <div className="w-full md:w-1/2 text-white mx-4 md:mx-0">
-          <h2 className="text-2xl font-bold">{dataWisata[0].title}</h2>
-          <p className='mt-2'>{dataWisata[0].des}</p>
+          <h2 className="text-2xl font-bold justify-center">{dataWisata[0].title}</h2>
+          <p className='mt-9 text-justify'>{dataWisata[0].des}</p>
         </div>
       </div>
     </div>
