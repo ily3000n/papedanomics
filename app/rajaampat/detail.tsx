@@ -23,8 +23,8 @@ const Detail: React.FC = () => {
   return (
     <div className='bg-[#13182B] h-full pb-[6rem]'>
       <h1 className='text-center text-4xl font-extrabold pt-6 text-white'>RAJA AMPAT</h1>
-      <div className='flex flex-col md:flex-row gap-16 p-4'>
-        <div className="w-full md:w-5/12 mx-16">
+      <div className='flex flex-col md:flex-row gap-16 p-4 mx-4'>
+        <div className="w-full md:w-5/12 md:mx-16">
           <Carousel
             plugins={[plugin.current]}
             className="w-full"
@@ -39,7 +39,7 @@ const Detail: React.FC = () => {
                       <Image
                         src={img}
                         alt={`Slide ${index + 1}`}
-                        className="object-cover w-full h-96 rounded-lg"
+                        className="object-cover w-full h-64 md:h-96 rounded-lg"
                         width={400}
                         height={300}
                       />
@@ -54,13 +54,11 @@ const Detail: React.FC = () => {
             </div>
           </Carousel>
         </div>
-        <div className="w-full md:w-1/2 text-white">
+        <div className="w-full md:w-1/2 text-white mx-4 md:mx-0">
           <h2 className="text-2xl font-bold">{dataWisata[0].title}</h2>
           <p className='mt-2'>{dataWisata[0].des}</p>
         </div>
       </div>
-
-      
     </div>
   )
 }
