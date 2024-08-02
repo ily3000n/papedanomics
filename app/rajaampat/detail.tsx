@@ -3,7 +3,7 @@ import Image from 'next/image'
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
  
-import { Card, CardContent } from "../../components/ui/card"
+import { Card } from "../../components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -16,6 +16,9 @@ import { dataWisata } from '@/data'
 const Detail: React.FC = () => {
   const plugin = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false }))
 
+  if (!dataWisata || !dataWisata[0] || !dataWisata[0].slide) {
+    return <div>Data is not available</div>
+  }
 
   return (
     <div className='bg-[#13182B] min-h-screen'>
