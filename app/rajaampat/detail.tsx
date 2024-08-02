@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
- 
+
 import { Card } from "../../components/ui/card"
 import {
   Carousel,
@@ -21,7 +21,7 @@ const Detail: React.FC = () => {
   }
 
   return (
-    <div className='bg-[#13182B] min-h-screen'>
+    <div className='bg-[#13182B] h-full pb-[6rem]'>
       <h1 className='text-center text-4xl font-extrabold pt-6 text-white'>RAJA AMPAT</h1>
       <div className='flex flex-col md:flex-row gap-16 p-4'>
         <div className="w-full md:w-5/12 mx-16">
@@ -53,12 +53,14 @@ const Detail: React.FC = () => {
               <CarouselNext className="text-white bg-gray-800 p-2 rounded">Next</CarouselNext>
             </div>
           </Carousel>
-        </div> 
-        <div className="w-full md:w-1/2 text-white mx-auto">
+        </div>
+        <div className="w-full md:w-1/2 text-white">
           <h2 className="text-2xl font-bold">{dataWisata[0].title}</h2>
-          <p>{dataWisata[0].des}</p>
+          <p className='mt-2'>{dataWisata[0].des}</p>
         </div>
       </div>
+
+      
     </div>
   )
 }
