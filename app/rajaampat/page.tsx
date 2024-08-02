@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import Detail from './detail'
 import React from 'react'
+import Footer from '@/components/Footer'
 
 
 const page = () => {
@@ -9,6 +10,7 @@ const page = () => {
     <div>
         <Header />
         <Detail />
+        <Footer/>
 
     
 
