@@ -7,7 +7,7 @@ const Card2 = () => {
   return (
     <div className='bg-[#13182B]'>
       <h1 className='py-5 font-extrabold text-center text-4xl text-cyan-500'>WISATA PAPUA BARAT</h1>
-      <div className='w-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 py-5 mx-auto'>
+      <div className='w-fit grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-7 py-5 mx-auto'>
         {dataWisata.map((wisata) => (
           <div key={wisata.id} className='w-full sm:w-[400px] h-auto flex flex-col bg-white rounded-xl drop-shadow-lg'>
             <Image
