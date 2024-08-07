@@ -22,7 +22,7 @@ export const dataWisata = [
       title: "Taman Nasional Teluk Cendrawasih",
       address:"Raja Ampat, Papua Barat, Indonesia.",
       des: "Taman Nasional Teluk Cenderawasih di Papua Barat adalah kawasan konservasi laut terbesar di Indonesia, menampilkan perairan jernih dengan terumbu karang yang berwarna-warni dan kehidupan laut yang melimpah. Dikenal dengan pulau-pulau eksotis dan pantai-pantai alami, taman nasional ini menawarkan pengalaman menyelam yang menakjubkan dan pemandangan matahari terbenam yang memukau. Dengan keanekaragaman hayati yang kaya, tempat ini adalah surga bagi para penggemar alam dan petualangan bawah laut.",
-      img: "/TNTC1.jpg",
+      img: "/TNTC1.JPG",
       link: "/telukcendrawasih",
       slide:["/TNTC1.jpg","/TNTC2.jpg","/TNTC3.jpg","/TNTC4.jpg","/TNTC5.jpg","/TNTC6.jpg",]
       
