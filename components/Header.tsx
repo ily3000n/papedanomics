@@ -8,6 +8,7 @@ const Header = () => {
     <div className="h-auto w-full bg-white flex items-center justify-center ">
       <div className="flex items-center w-full justify-between">
         <div className="flex items-center justify-start w-2/4">
+        <a href="/">
           <Image 
             src="/thumbnail.png" // Replace with the path to your logo image
             alt="Logo"
@@ -15,6 +16,7 @@ const Header = () => {
             height={100} // Adjust height as needed
             className="object-contain"
           />
+          </a>
         </div>
         <div className="flex items-center justify-end w-2/4">
           {/* <h1 className="md:text-7xl text-2xl lg:text-md font-bold text-blue-950 text-left"> */}
