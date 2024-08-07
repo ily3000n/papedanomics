@@ -22,7 +22,7 @@ const Detail: React.FC = () => {
 
   return (
     <div className='bg-[#13182B] min-h-screen pb-24'>
-      <h1 className='text-center text-4xl font-extrabold pt-6 text-white'>RAJA AMPAT</h1>
+      <h1 className='text-center text-4xl font-extrabold pt-6 text-white flex flex-col'>RAJA AMPAT</h1>
       <div className='flex flex-col md:flex-row gap-8 p-6 mx-auto max-w-screen-xl'>
         <div className="w-full md:w-7/12">
           <Carousel
@@ -59,6 +59,9 @@ const Detail: React.FC = () => {
           <p className='mt-6 text-justify '>{dataWisata[0].des}</p>
         </div>
       </div>
+      <div className='text-white text-center text-3xl font-bold'>Info Sekitar Raja Ampat</div>
+
+      
     </div>
   )
 }
