@@ -1,26 +1,53 @@
-'use client'
-import Image from 'next/image'
-import * as React from "react"
-import Autoplay from "embla-carousel-autoplay"
-import { MdHotel } from "react-icons/md";
-import { ImSpoonKnife } from "react-icons/im";
-import { BsInfoSquareFill } from "react-icons/bs";
+'use client';
+import Image from 'next/image';
+import * as React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
+import { MdHotel } from 'react-icons/md';
+import { ImSpoonKnife } from 'react-icons/im';
+import { BsInfoSquareFill } from 'react-icons/bs';
 
-import { Card } from "../../components/ui/card"
+import { Card } from '../../components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import { dataWisata } from '@/data'
+} from '@/components/ui/carousel';
+import { dataWisata, dataLagu2, dataIcon } from '@/data';
 
 const Detail: React.FC = () => {
-  const plugin = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false }))
+  const plugin = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+
+  const [audio, setAudio] = React.useState<HTMLAudioElement | null>(null);
+  const [randomIcon, setRandomIcon] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * dataIcon.length);
+    setRandomIcon(dataIcon[randomIndex]);
+  }, []);
+
+  React.useEffect(() => {
+    return () => {
+      if (audio) {
+        audio.pause();
+        audio.removeEventListener('ended', () => {});
+      }
+    };
+  }, [audio]);
+
+  const playRandomSong = () => {
+    if (audio) {
+      audio.pause();
+    }
+    const randomIndex = Math.floor(Math.random() * dataLagu2.length);
+    const newAudio = new Audio(dataLagu2[randomIndex]);
+    newAudio.play();
+    setAudio(newAudio);
+  };
 
   if (!dataWisata || !dataWisata[1] || !dataWisata[1].slide) {
-    return <div>Data is not available</div>
+    return <div>Data is not available</div>;
   }
 
   const wisata = dataWisata[1];
@@ -93,8 +120,15 @@ const Detail: React.FC = () => {
           <p className='text-lg text-justify'>{wisata.info}</p>
         </div>
       </div>
+      <div className='fixed bottom-5 right-5'>
+        {randomIcon && (
+          <button onClick={playRandomSong} className='p-3 rounded-full bg-blue-500 hover:bg-blue-700 transition-colors'>
+            <Image src={randomIcon} alt="Play Icon" width={50} height={50} />
+          </button>
+        )}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Detail
+export default Detail;
