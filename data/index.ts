@@ -30,7 +30,7 @@ export const dataWisata = [
       des: "Taman Nasional Teluk Cenderawasih di Papua Barat adalah kawasan konservasi laut terbesar di Indonesia, menampilkan perairan jernih dengan terumbu karang yang berwarna-warni dan kehidupan laut yang melimpah. Dikenal dengan pulau-pulau eksotis dan pantai-pantai alami, taman nasional ini menawarkan pengalaman menyelam yang menakjubkan dan pemandangan matahari terbenam yang memukau. Dengan keanekaragaman hayati yang kaya, tempat ini adalah surga bagi para penggemar alam dan petualangan bawah laut.",
       img: "/TNTC1.JPG",
       link: "/telukcendrawasih",
-      slide:["/TNTC1.jpg","/TNTC2.jpg","/TNTC3.jpg","/TNTC4.jpg","/TNTC5.jpg","/TNTC6.jpg",],
+      slide:["/TNTC1.JPG","/TNTC2.JPG","/TNTC3.JPG","/TNTC4.JPG","/TNTC5.JPG","/TNTC6.JPG",],
       penginapan:"Nabire Beach Hotel, homestay di kawasan taman nasional.",
       restoran:"Kebanyakan di Nabire atau di homestay.",
       info:" Snorkeling dan diving dengan hiu paus, Pulau Mioswaar dengan sumber air panas, Pulau Rumberpon untuk birdwatching"
