@@ -2,6 +2,9 @@
 import Image from 'next/image'
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
+import { MdHotel } from "react-icons/md";
+import { ImSpoonKnife } from "react-icons/im";
+import { BsInfoSquareFill } from "react-icons/bs";
 
 import { Card } from "../../components/ui/card"
 import {
@@ -19,12 +22,14 @@ const Detail: React.FC = () => {
   if (!dataWisata || !dataWisata[2] || !dataWisata[2].slide) {
     return <div>Data is not available</div>
   }
-  
+
+  const wisata = dataWisata[2];
+
   return (
-    <div className='bg-[#13182B] h-full pb-[6rem]'>
-      <h1 className='text-center text-4xl font-extrabold pt-6 text-white'>Taman Nasional Teluk Cendrawasih</h1>
-      <div className='flex flex-col md:flex-row gap-16 p-4 mx-4'>
-        <div className="w-full md:w-5/12 md:mx-16">
+    <div className='bg-[#13182B] min-h-screen pb-24'>
+      <h1 className='text-center text-4xl font-extrabold pt-6 text-white'>{wisata.title.toUpperCase()}</h1>
+      <div className='flex flex-col md:flex-row gap-8 p-6 mx-auto max-w-screen-xl'>
+        <div className="w-full md:w-7/12">
           <Carousel
             plugins={[plugin.current]}
             className="w-full"
@@ -32,14 +37,14 @@ const Detail: React.FC = () => {
             onMouseLeave={() => plugin.current.reset()}
           >
             <CarouselContent>
-              {dataWisata[2].slide.map((img, index) => (
+              {wisata.slide.map((img, index) => (
                 <CarouselItem key={index}>
                   <div className="p-1">
                     <Card>
                       <Image
                         src={img}
                         alt={`Slide ${index + 1}`}
-                        className="object-cover w-full h-64 md:h-96 rounded-lg"
+                        className="object-cover w-full h-64 md:h-80 lg:h-96 rounded-lg"
                         width={400}
                         height={300}
                       />
@@ -48,15 +53,44 @@ const Detail: React.FC = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="flex justify-between mt-2">
-              <CarouselPrevious className="text-white bg-gray-800 p-2 rounded">Previous</CarouselPrevious>
-              <CarouselNext className="text-white bg-gray-800 p-2 rounded">Next</CarouselNext>
+            <div className="flex justify-between mt-4">
+              <CarouselPrevious className="text-white bg-gray-800 hover:bg-gray-700 p-2 rounded-lg transition">Previous</CarouselPrevious>
+              <CarouselNext className="text-white bg-gray-800 hover:bg-gray-700 p-2 rounded-lg transition">Next</CarouselNext>
             </div>
           </Carousel>
         </div>
-        <div className="w-full md:w-1/2 text-white mx-4 md:mx-0">
-          <h2 className="text-2xl font-bold justify-center">{dataWisata[2].title}</h2>
-          <p className='mt-9 text-justify'>{dataWisata[2].des}</p>
+        <div className="w-full md:w-7/12 text-white mx-auto">
+          <p className='text-justify ml-4 mt-12'>{wisata.des}</p>
+        </div>
+      </div>
+      <div className='text-white text-center text-3xl font-bold'>Info Sekitar {wisata.title}</div>
+      <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-rows-3 gap-4 mt-4 text-white md:mr-[300px] mx-10'>
+        <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
+          <div className='flex items-center'>
+            <MdHotel className='text-3xl' />
+            <span className='ml-2 text-center'>Penginapan</span>
+          </div>
+        </div>
+        <div>
+          <p className='text-lg text-justify'>{wisata.penginapan}</p>
+        </div>
+        <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
+          <div className='flex items-center'>
+            <ImSpoonKnife className='text-3xl' />
+            <span className='ml-2 text-center'>Restoran</span>
+          </div>
+        </div>
+        <div>
+          <p className='text-lg text-justify'>{wisata.restoran}</p>
+        </div>
+        <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
+          <div className='flex items-center'>
+            <BsInfoSquareFill className='text-3xl' />
+            <span className='ml-2 text-center'>Informasi</span>
+          </div>
+        </div>
+        <div>
+          <p className='text-lg text-justify'>{wisata.info}</p>
         </div>
       </div>
     </div>
