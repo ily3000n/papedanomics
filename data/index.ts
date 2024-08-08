@@ -75,3 +75,23 @@ export const dataWisata = [
     
   ];
 
+  export const dataLagu = [
+    '/song1.mp3',
+    
+  ];
+  export const dataLagu2 = [
+    '/song1.mp3',
+    '/song2.mp3',
+    '/song3.mp3',
+    
+  ];
+
+  export const dataIcon = [
+    '/thumbnail.png',
+    '/thumbnail2.png',
+    '/thumbnail3.png',
+    '/thumbnail4.png',
+    
+  ];
+  
+
