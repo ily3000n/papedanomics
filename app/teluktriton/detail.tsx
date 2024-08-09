@@ -90,7 +90,7 @@ const Detail: React.FC = () => {
           <p className='text-justify ml-4 mt-12'>{wisata.des}</p>
         </div>
       </div>
-      <div className='text-cyan-500 text-center text-3xl font-bold'>Info Sekitar {wisata.title}</div>
+      <div className='text-cyan-500 text-center text-3xl font-bold mx-auto'>Info Sekitar {wisata.title}</div>
       <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-rows-3 gap-4 mt-4 text-white md:mr-[300px] mx-10'>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
