@@ -114,8 +114,11 @@ const Detail: React.FC = () => {
       </div>
       <div className='flex flex-col justify-center items-center mt-8'>
         <h1 className='text-cyan-500 text-3xl font-extrabold mb-5'>Lokasi {wisata.title}</h1>
-        
-      <iframe className='rounded-lg' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.275714586372!2d130.490915681219!3d-0.23603658771502894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5fa27c8c822585%3A0x32d4a5a9909469f5!2sKepulauan%20Raja%20Ampat!5e0!3m2!1sid!2sid!4v1723200661711!5m2!1sid!2sid" width="600" height="450"  loading="lazy" ></iframe>
+        <div className='w-full max-w-md md:max-w-2xl'>
+      <iframe className='rounded-lg' 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.275714586372!2d130.490915681219!3d-0.23603658771502894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5fa27c8c822585%3A0x32d4a5a9909469f5!2sKepulauan%20Raja%20Ampat!5e0!3m2!1sid!2sid!4v1723200661711!5m2!1sid!2sid" 
+      loading="lazy" />
+      </div>
       </div>
       <div className='fixed bottom-5 right-5'>
         {randomIcon && (
