@@ -116,7 +116,7 @@ const Detail: React.FC = () => {
         <h1 className='text-cyan-500 text-3xl font-extrabold mb-5'>Lokasi {wisata.title}</h1>
         <div className='w-full max-w-md md:max-w-2xl'>
       <iframe className='rounded-lg w-full h-64 md:h-96' 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042073.6446006596!2d134.22695890685034!3d-1.5142082963216368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x68015d9f553fd03b%3A0xc15d641efe3666a8!2sWafsarak%20Waterfall!5e0!3m2!1sid!2sid!4v1723201798960!5m2!1sid!2sid" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8542025781735!2d132.18307439999998!3d-1.2596063999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5a5ce229642c99%3A0x4eae1be1700d181a!2sDanau%20Framu%2C%20Ayamaru!5e0!3m2!1sid!2sid!4v1723209247368!5m2!1sid!2sid" 
       loading="lazy" />
       </div>
       </div>
@@ -132,4 +132,3 @@ const Detail: React.FC = () => {
 };
 
 export default Detail;
-

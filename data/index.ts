@@ -52,15 +52,15 @@ export const dataWisata = [
     },
     {
       id: 5,
-      title: "Air Terjun Wafsarak",
+      title: "Danau Framu, Ayamaru",
       address:"Raja Ampat, Papua Barat, Indonesia.",
-      des: "Air Terjun Wafsarak atau Air Terjun Warsa, merupakan sebuah destinasi wisata alam yang menawarkan keindahan dan kealamian yang luar biasa di Biak Utara, Papua Barat. Berada di Distrik Warsa, air terjun ini memiliki ketinggian sekitar 10 meter dan mengalir deras ke sungai di bawahnya, yang berwarna biru kehijauan yang sangat menarik. Akses menuju Air Terjun Wafsarak cukup mudah karena letaknya yang berada di pinggir jalan raya, namun untuk sampai ke lokasi Anda harus jalan kaki terlebih sejauh 200 meter. Harga tiket menuju Air Terjun Wafsarak yaitu Rp 35.000,- per rombongan.",
-      img: "/ATW1.jpg",
-      link: "/airterjunwafsarak",
-      slide:["/ATW1.jpg","/ATW2.jpg","/ATW3.jpg","/ATW4.jpg",],
-      penginapan:"Penginapan terdekat di Biak.",
-      restoran:"Di Biak, sebelum perjalanan ke air terjun.",
-      info:"Trekking ke air terjun, berenang di kolam alami."
+      des: "Danau Framu Ayamaru, terletak di Distrik Ayamaru, Kabupaten Maybrat, Papua Barat, adalah sebuah destinasi wisata alam yang menawan dengan panorama yang memukau. Danau ini dikenal karena airnya yang jernih dan dikelilingi oleh hutan tropis yang rimbun, menciptakan suasana yang damai dan alami. Danau ini juga merupakan habitat bagi berbagai spesies ikan dan burung lokal, menjadikannya tempat yang menarik bagi pecinta alam dan peneliti. Untuk mengakses danau ini, pengunjung biasanya harus melakukan perjalanan dengan kendaraan lokal dan berjalan kaki beberapa ratus meter dari titik parkir terdekat. Harga tiket masuk dan biaya lainnya dapat bervariasi, dan disarankan untuk memeriksa informasi terbaru sebelum merencanakan kunjungan.",
+      img: "/framu1.JPG",
+      link: "/danauframu",
+      slide:["/framu1.JPG","/framu2.JPG","/framu3.JPG"],
+      penginapan:"Danau Framu di Ayamaru menawarkan pengalaman menginap di tempat seperti Ayamaru Guest House, Framu Lake Homestay, dan Losmen Maybrat,",
+      restoran:"Beragam pilihan seperti makan di Warung Makan Ayamaru, Kedai Ikan Bakar Framu, dan Café Maybrat. ",
+      info:"Wisatawan dapat menikmati aktivitas seperti berenang dan memancing, serta menikmati pemandangan hutan hujan tropis yang masih alami. Fasilitas di sekitar danau terbatas, sehingga disarankan untuk membawa kebutuhan pribadi yang cukup, terutama saat berkunjung pada musim kemarau."
     },
     {
       id: 6,
