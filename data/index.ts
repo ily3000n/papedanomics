@@ -9,7 +9,8 @@ export const dataWisata = [
       slide:["/rajaampat1.jpg","/rajaampat2.jpg","/rajaampat3.jpg","/rajaampat4.jpg","/rajaampat5.jpg",],
       penginapan:"Banyak pilihan, mulai dari homestay hingga resort mewah seperti Misool Eco Resort, Papua Paradise Eco Resort, dan Raja Ampat Dive Lodge.",
       restoran:"Umumnya tersedia di penginapan atau resort. Untuk makanan lokal, homestay biasanya menyediakan makanan tradisional.",
-      info:"Diving spots seperti Blue Magic, Cape Kri, dan Manta Sandy, hiking di Piaynemo untuk pemandangan spektakuler."
+      info:"Diving spots seperti Blue Magic, Cape Kri, dan Manta Sandy, hiking di Piaynemo untuk pemandangan spektakuler.",
+      
     },
     {
       id: 2,
@@ -46,7 +47,8 @@ export const dataWisata = [
       slide:["/TT1.jpg","/TT2.JPG","/TT3.JPG","/TT4.JPG","/TT5.JPG",],
       penginapan:"Homestay atau penginapan sederhana di sekitar kawasan.",
       restoran:"Fasilitas makan biasanya disediakan oleh penginapan atau homestay.",
-      info:"Lukisan batu kuno di dinding tebing, snorkeling dan diving di terumbu karang."
+      info:"Lukisan batu kuno di dinding tebing, snorkeling dan diving di terumbu karang.",
+      
     },
     {
       id: 5,
@@ -72,6 +74,43 @@ export const dataWisata = [
       restoran:"Banyak restoran di Sorong yang menyajikan makanan laut.",
       info:"Snorkeling, berenang, dan menikmati pemandangan pantai yang indah."
     },
+    {
+      id: 7,
+      title: "Pulau Mansinam",
+      address:"",
+      des: "Pulau Mansinam, terletak di Teluk Doreh, Manokwari, adalah situs bersejarah yang memiliki arti penting bagi sejarah masuknya agama Kristen di Papua. Pada tanggal 5 Februari 1855, dua misionaris asal Jerman, Carl Wilhelm Ottow dan Johann Gottlob Geissler, tiba di pulau ini, menandai dimulainya penyebaran agama Kristen di Papua. Pulau ini kini menjadi tempat ziarah dengan monumen besar sebagai penghormatan bagi para misionaris. Selain nilai sejarahnya, Pulau Mansinam juga memiliki pantai yang indah dengan pasir putih dan air laut yang jernih, menjadikannya tempat yang sempurna untuk berwisata dan merenung.",
+      img: "/mansinam1.jpg",
+      link: "/mansinam",
+      slide:["/mansinam1.jpg","/mansinam2.jpg","/mansinam3.jpg","/mansinam4.jpg","/mansinam5.jpg",],
+      penginapan:"Mansinam Beach Resort.",
+      restoran:"Restoran di penginapan dan warung lokal.",
+      info:"Sejarah misi Kristen, snorkeling dan diving."
+    },
+    {
+      id: 8,
+      title: "Danau Anggi",
+      address:"",
+      des: "Danau Anggi adalah salah satu permata tersembunyi di pegunungan Arfak, Papua Barat. Terletak di ketinggian sekitar 2.000 meter di atas permukaan laut, danau ini terbagi menjadi dua bagian yaitu Danau Anggi Giji dan Danau Anggi Gida. Keduanya dikenal karena pemandangan alamnya yang spektakuler dengan air yang tenang, dikelilingi oleh pegunungan hijau dan udara yang sejuk. Kawasan ini juga dihuni oleh suku Arfak, yang memiliki tradisi dan budaya yang unik. Danau Anggi adalah destinasi yang ideal untuk pecinta alam, trekking, dan eksplorasi budaya.",
+      img: "/anggi1.jpg",
+      link: "/danauanggi",
+      slide:["/anggi1.jpg","/anggi2.jpg","/anggi3.jpg"],
+      penginapan:"Homestay di sekitar danau.",
+      restoran:"Warung dan fasilitas makan di homestay.",
+      info:" Pemandangan danau yang indah, trekking di sekitar danau."
+    },
+    {
+      id: 9,
+      title: " Pulau Roon",
+      address:"",
+      des: "Pulau Roon terletak di Kabupaten Teluk Wondama, Papua Barat. Pulau ini terkenal karena keindahan alam bawah lautnya yang luar biasa, menjadikannya surga bagi penyelam dan snorkeler. Selain itu, Pulau Roon memiliki gereja tua yang bersejarah, dibangun pada abad ke-19 oleh misionaris Jerman, yang hingga kini masih digunakan oleh penduduk setempat. Gereja ini menyimpan Alkitab kuno yang diterbitkan pada tahun 1898, menjadikannya salah satu daya tarik utama di pulau ini. Dengan pantai berpasir putih, hutan tropis, dan kehidupan laut yang melimpah, Pulau Roon adalah destinasi sempurna bagi mereka yang mencari kedamaian dan keindahan alam",
+      img: "/roon1.jpg",
+      link: "/pulauroon",
+      slide:["/roon1.jpg","/roon2.jpg","/roon3.jpg"],
+      penginapan:"Homestay lokal.",
+      restoran:"Fasilitas makan disediakan oleh homestay.",
+      info:"Gereja tua dengan kaca patri indah, diving dan snorkeling."
+    },
+    
     
   ];
 

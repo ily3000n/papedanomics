@@ -1,33 +1,25 @@
 'use client';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import * as React from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { MdHotel } from 'react-icons/md';
 import { ImSpoonKnife } from 'react-icons/im';
 import { BsInfoSquareFill } from 'react-icons/bs';
-
 import { Card } from '../../components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { dataWisata, dataLagu2, dataIcon } from '@/data';
 
 const Detail: React.FC = () => {
-  const plugin = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+  const [randomIcon, setRandomIcon] = useState<string | null>(null);
 
-  const [audio, setAudio] = React.useState<HTMLAudioElement | null>(null);
-  const [randomIcon, setRandomIcon] = React.useState<string | null>(null);
-
-  React.useEffect(() => {
+  useEffect(() => {
     const randomIndex = Math.floor(Math.random() * dataIcon.length);
     setRandomIcon(dataIcon[randomIndex]);
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     return () => {
       if (audio) {
         audio.pause();
@@ -54,7 +46,7 @@ const Detail: React.FC = () => {
 
   return (
     <div className='bg-[#13182B] min-h-screen pb-24'>
-      <h1 className='text-center text-4xl font-extrabold pt-6 text-white'>{wisata.title.toUpperCase()}</h1>
+      <h1 className='text-center text-4xl font-extrabold pt-6 text-cyan-500'>{wisata.title.toUpperCase()}</h1>
       <div className='flex flex-col md:flex-row gap-8 p-6 mx-auto max-w-screen-xl'>
         <div className="w-full md:w-7/12">
           <Carousel
@@ -90,21 +82,21 @@ const Detail: React.FC = () => {
           <p className='text-justify ml-4 mt-12'>{wisata.des}</p>
         </div>
       </div>
-      <div className='text-white text-center text-3xl font-bold'>Info Sekitar {wisata.title}</div>
+      <div className='text-cyan-500 text-center text-3xl font-bold mx-auto'>Info Sekitar {wisata.title}</div>
       <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-rows-3 gap-4 mt-4 text-white md:mr-[300px] mx-10'>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
-            <MdHotel className='text-3xl' />
-            <span className='ml-2 text-center'>Penginapan</span>
+            <MdHotel className='text-3xl text-cyan-500' />
+            <span className='ml-2 text-center text-cyan-500'>Penginapan</span>
           </div>
         </div>
         <div>
-          <p className='text-lg text-justify'>{wisata.penginapan}</p>
+          <p className='text-lg text-justify '>{wisata.penginapan}</p>
         </div>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
-            <ImSpoonKnife className='text-3xl' />
-            <span className='ml-2 text-center'>Restoran</span>
+            <ImSpoonKnife className='text-3xl text-cyan-500' />
+            <span className='ml-2 text-center text-cyan-500'>Restoran</span>
           </div>
         </div>
         <div>
@@ -112,13 +104,18 @@ const Detail: React.FC = () => {
         </div>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
-            <BsInfoSquareFill className='text-3xl' />
-            <span className='ml-2 text-center'>Informasi</span>
+            <BsInfoSquareFill className='text-3xl text-cyan-500' />
+            <span className='ml-2 text-center text-cyan-500'>Informasi</span>
           </div>
         </div>
         <div>
           <p className='text-lg text-justify'>{wisata.info}</p>
         </div>
+      </div>
+      <div className='flex flex-col justify-center items-center mt-8'>
+        <h1 className='text-cyan-500 text-3xl font-extrabold mb-5'>Lokasi {wisata.title}</h1>
+        
+      <iframe className='rounded-lg' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31886.86419298832!2d134.4735541190077!3d-2.553058908573496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d4b62bec61af6ef%3A0x758ba1aa8c8a474a!2sTaman%20Nasional%20Teluk%20Cenderawasih!5e0!3m2!1sid!2sid!4v1723200833485!5m2!1sid!2sid" width="600" height="450"  loading="lazy" ></iframe>
       </div>
       <div className='fixed bottom-5 right-5'>
         {randomIcon && (
@@ -132,3 +129,4 @@ const Detail: React.FC = () => {
 };
 
 export default Detail;
+
