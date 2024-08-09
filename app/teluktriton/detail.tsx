@@ -54,7 +54,7 @@ const Detail: React.FC = () => {
 
   return (
     <div className='bg-[#13182B] min-h-screen pb-24'>
-      <h1 className='text-center text-4xl font-extrabold pt-6 text-white'>{wisata.title.toUpperCase()}</h1>
+      <h1 className='text-center text-4xl font-extrabold pt-6 text-cyan-500'>{wisata.title.toUpperCase()}</h1>
       <div className='flex flex-col md:flex-row gap-8 p-6 mx-auto max-w-screen-xl'>
         <div className="w-full md:w-7/12">
           <Carousel
@@ -90,21 +90,21 @@ const Detail: React.FC = () => {
           <p className='text-justify ml-4 mt-12'>{wisata.des}</p>
         </div>
       </div>
-      <div className='text-white text-center text-3xl font-bold'>Info Sekitar {wisata.title}</div>
+      <div className='text-cyan-500 text-center text-3xl font-bold'>Info Sekitar {wisata.title}</div>
       <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-rows-3 gap-4 mt-4 text-white md:mr-[300px] mx-10'>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
             <MdHotel className='text-3xl' />
-            <span className='ml-2 text-center'>Penginapan</span>
+            <span className='ml-2 text-center text-cyan-500'>Penginapan</span>
           </div>
         </div>
         <div>
-          <p className='text-lg text-justify'>{wisata.penginapan}</p>
+          <p className='text-lg text-justify '>{wisata.penginapan}</p>
         </div>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
             <ImSpoonKnife className='text-3xl' />
-            <span className='ml-2 text-center'>Restoran</span>
+            <span className='ml-2 text-center text-cyan-500'>Restoran</span>
           </div>
         </div>
         <div>
@@ -113,7 +113,7 @@ const Detail: React.FC = () => {
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
             <BsInfoSquareFill className='text-3xl' />
-            <span className='ml-2 text-center'>Informasi</span>
+            <span className='ml-2 text-center text-cyan-500'>Informasi</span>
           </div>
         </div>
         <div>
