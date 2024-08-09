@@ -106,9 +106,9 @@ export const dataWisata = [
       img: "/roon1.jpg",
       link: "/pulauroon",
       slide:["/roon1.jpg","/roon2.jpg","/roon3.jpg"],
-      penginapan:"Homestay lokal.",
-      restoran:"Fasilitas makan disediakan oleh homestay.",
-      info:"Gereja tua dengan kaca patri indah, diving dan snorkeling."
+      penginapan:"Menawarkan penginapan di tempat-tempat seperti Roon Island Resort, yang menyediakan akomodasi dengan pemandangan laut yang menakjubkan, serta homestay lokal yang menawarkan pengalaman lebih dekat dengan budaya setempat..",
+      restoran:" Restoran di sekitar Pulau Roon, seperti Warung Rasa Laut dan Roon Seafood, menyajikan hidangan laut segar dan masakan lokal.",
+      info:"Pulau ini terkenal dengan keindahan bawah lautnya, ideal untuk snorkeling dan menyelam, serta pemandangan pantai yang memukau. Akses ke Pulau Roon biasanya melalui perjalanan laut dari Sorong, dan fasilitas umum terbatas, jadi disarankan untuk membawa kebutuhan pribadi serta memeriksa cuaca sebelum berkunjung."
     },
     
     
