@@ -94,7 +94,7 @@ const Detail: React.FC = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-rows-3 gap-4 mt-4 text-white md:mr-[300px] mx-10'>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
-            <MdHotel className='text-3xl' />
+            <MdHotel className='text-3xl text-cyan-500' />
             <span className='ml-2 text-center text-cyan-500'>Penginapan</span>
           </div>
         </div>
@@ -103,7 +103,7 @@ const Detail: React.FC = () => {
         </div>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
-            <ImSpoonKnife className='text-3xl' />
+            <ImSpoonKnife className='text-3xl text-cyan-500' />
             <span className='ml-2 text-center text-cyan-500'>Restoran</span>
           </div>
         </div>
@@ -112,7 +112,7 @@ const Detail: React.FC = () => {
         </div>
         <div className='flex justify-center md:justify-end md:border-r-2 pr-4'>
           <div className='flex items-center'>
-            <BsInfoSquareFill className='text-3xl' />
+            <BsInfoSquareFill className='text-3xl text-cyan-500' />
             <span className='ml-2 text-center text-cyan-500'>Informasi</span>
           </div>
         </div>
