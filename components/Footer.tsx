@@ -1,12 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    // <div className="bg-gradient-to-b from-[#13182B] to-white text-center p-16 text-[#13182B] font-extrabold text-xl ">
-    <div className="bg-white text-center  text-[#13182B] font-extrabold text-xl p-12">
+    <div className="bg-white text-center text-[#13182B] font-extrabold text-xl p-12">
       PAPEDANOMICS 2024
+      <div className="mt-4">
+        <Link href="/credit" className="text-sm text-[#13182B]">
+          Credit
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
