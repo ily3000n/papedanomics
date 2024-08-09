@@ -43,7 +43,7 @@ export const dataWisata = [
       des: "Teluk Triton, permata tersembunyi di Papua Barat, mempesona dengan keindahan alamnya yang luar biasa. Perairan teluk ini terkenal dengan kejernihan dan warna birunya yang menawan, serta terumbu karang yang kaya akan kehidupan laut. Destinasi ini menawarkan pengalaman snorkeling dan menyelam yang tak terlupakan, dengan pemandangan bawah laut yang kaya akan spesies ikan dan terumbu karang yang berwarna-warni. Dikelilingi oleh pegunungan dan hutan tropis, Teluk Triton juga menyuguhkan pemandangan matahari terbenam yang menakjubkan, menjadikannya tempat ideal bagi para pecinta alam dan penggemar keindahan alam.",
       img: "/TT1.jpg",
       link: "/teluktriton",
-      slide:["/TT1.JPG","/TT2.JPG","/TT3.JPG","/TT4.JPG","/TT5.JPG",],
+      slide:["/TT1.jpg","/TT2.JPG","/TT3.JPG","/TT4.JPG","/TT5.JPG",],
       penginapan:"Homestay atau penginapan sederhana di sekitar kawasan.",
       restoran:"Fasilitas makan biasanya disediakan oleh penginapan atau homestay.",
       info:"Lukisan batu kuno di dinding tebing, snorkeling dan diving di terumbu karang."
